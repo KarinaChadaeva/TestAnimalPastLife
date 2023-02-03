@@ -17,6 +17,7 @@
 		11E18956298D3CE500F0A933 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E18955298D3CE500F0A933 /* Question.swift */; };
 		11E18958298D3D0A00F0A933 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E18957298D3D0A00F0A933 /* QuestionViewController.swift */; };
 		11E1895B298D3E0300F0A933 /* img1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 11E1895A298D3E0200F0A933 /* img1.jpeg */; };
+		11E1895D298D64A300F0A933 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1895C298D64A300F0A933 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		11E18955298D3CE500F0A933 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		11E18957298D3D0A00F0A933 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		11E1895A298D3E0200F0A933 /* img1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpeg; sourceTree = "<group>"; };
+		11E1895C298D64A300F0A933 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				11E1893F298D388A00F0A933 /* ViewController.swift */,
 				11E18957298D3D0A00F0A933 /* QuestionViewController.swift */,
+				11E1895C298D64A300F0A933 /* ResultsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				11E18956298D3CE500F0A933 /* Question.swift in Sources */,
 				11E18940298D388A00F0A933 /* ViewController.swift in Sources */,
 				11E18958298D3D0A00F0A933 /* QuestionViewController.swift in Sources */,
+				11E1895D298D64A300F0A933 /* ResultsViewController.swift in Sources */,
 				11E1893C298D388A00F0A933 /* AppDelegate.swift in Sources */,
 				11E1893E298D388A00F0A933 /* SceneDelegate.swift in Sources */,
 				11E18954298D3CDD00F0A933 /* Answer.swift in Sources */,
