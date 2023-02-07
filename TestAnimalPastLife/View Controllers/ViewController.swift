@@ -29,6 +29,9 @@ class ViewController: UIViewController {
         alpha: 1
     )
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addVerticalGradient(topColor: primaryColor, bottomColor: secondaryColor)
@@ -47,6 +50,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {}
+    
     
     //MARK: - Alert Controller
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {

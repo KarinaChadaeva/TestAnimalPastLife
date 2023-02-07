@@ -10,7 +10,12 @@ import UIKit
 class QuestionViewController: UIViewController {
     @IBOutlet var questionTextLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
-    @IBOutlet var rangeSlider: UISlider!
+    @IBOutlet var rangeSlider: UISlider! {
+        didSet {
+            let answerCount = Float(currentAnswers.count - 1)
+            rangeSlider.value = answerCount
+        }
+    }
     @IBOutlet var progressView: UIProgressView!
     
     @IBOutlet var singleStackView: UIStackView!
@@ -20,8 +25,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet var singleButtons: [UIButton]!
     @IBOutlet var multipleLabels: [UILabel]!
     @IBOutlet var rangeLabels: [UILabel]!
-    
-    
+    @IBOutlet var multipleSwitches: [UISwitch]!
     
     
     //MARK: - Properties
@@ -42,10 +46,43 @@ class QuestionViewController: UIViewController {
         updateUI()
     }
 
-  
+    
+    @IBAction func singleButtonAnswerPressed(_ sender: UIButton) {
+        guard let currentIndex = singleButtons.firstIndex(of: sender) else { return }
+        
+        let currentAnswer = currentAnswers[currentIndex]
+        answersChosen.append(currentAnswer)
+        
+        nextQuestion()
+    }
+    
+    
+    @IBAction func answerButtonOfMultipleQuestionPressed() {
+        for (multipleSwitch, answer) in zip(multipleSwitches, currentAnswers) {
+            if multipleSwitch.isOn {
+                answersChosen.append(answer)
+            }
+        }
+        nextQuestion()
+    }
+    
+    @IBAction func answerButtonOfRangeQuestionPressed() {
+        let index = Int(rangeSlider.value)
+        answersChosen.append(currentAnswers[index])
+        
+        nextQuestion()
+    }
+    
+    //MARK: - Navigation
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultsVC = segue.destination as! ResultsViewController
+        resultsVC.answers = answersChosen
+    }
 }
 
+
+//MARK: - Private Methods
 extension QuestionViewController {
     private func updateUI() {
         for stackView in [singleStackView, multipleStackView, rangeStackView] {
@@ -104,4 +141,14 @@ extension QuestionViewController {
         imageView.image = UIImage(named: question.imageText)
     }
     
+    private func nextQuestion() {
+        questionIndex += 1
+        
+        if questionIndex < questions.count {
+            updateUI()
+            return
+        }
+        
+        performSegue(withIdentifier: "showResults", sender: nil)
+    }
 }

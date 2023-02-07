@@ -11,6 +11,10 @@
 		114B3951299256DE00F2DBFD /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 114B3950299256DE00F2DBFD /* img3.jpg */; };
 		114B3953299256E300F2DBFD /* img4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 114B3952299256E300F2DBFD /* img4.jpg */; };
 		114B3955299256E700F2DBFD /* img5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 114B3954299256E700F2DBFD /* img5.jpg */; };
+		11C17AB6299267CF002505BA /* sloth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 11C17AB5299267CF002505BA /* sloth.jpeg */; };
+		11C17AB8299267D2002505BA /* monkey.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 11C17AB7299267D2002505BA /* monkey.jpeg */; };
+		11C17ABA299267D6002505BA /* lion.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 11C17AB9299267D6002505BA /* lion.jpeg */; };
+		11C17ABC299267DA002505BA /* snake.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 11C17ABB299267DA002505BA /* snake.jpeg */; };
 		11E1893C298D388A00F0A933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1893B298D388A00F0A933 /* AppDelegate.swift */; };
 		11E1893E298D388A00F0A933 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1893D298D388A00F0A933 /* SceneDelegate.swift */; };
 		11E18940298D388A00F0A933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1893F298D388A00F0A933 /* ViewController.swift */; };
@@ -29,6 +33,10 @@
 		114B3950299256DE00F2DBFD /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
 		114B3952299256E300F2DBFD /* img4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img4.jpg; sourceTree = "<group>"; };
 		114B3954299256E700F2DBFD /* img5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img5.jpg; sourceTree = "<group>"; };
+		11C17AB5299267CF002505BA /* sloth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sloth.jpeg; sourceTree = "<group>"; };
+		11C17AB7299267D2002505BA /* monkey.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monkey.jpeg; sourceTree = "<group>"; };
+		11C17AB9299267D6002505BA /* lion.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lion.jpeg; sourceTree = "<group>"; };
+		11C17ABB299267DA002505BA /* snake.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snake.jpeg; sourceTree = "<group>"; };
 		11E18938298D388A00F0A933 /* TestAnimalPastLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAnimalPastLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E1893B298D388A00F0A933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11E1893D298D388A00F0A933 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +138,10 @@
 				114B3950299256DE00F2DBFD /* img3.jpg */,
 				114B3952299256E300F2DBFD /* img4.jpg */,
 				114B3954299256E700F2DBFD /* img5.jpg */,
+				11C17AB5299267CF002505BA /* sloth.jpeg */,
+				11C17AB7299267D2002505BA /* monkey.jpeg */,
+				11C17AB9299267D6002505BA /* lion.jpeg */,
+				11C17ABB299267DA002505BA /* snake.jpeg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -192,12 +204,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C17ABC299267DA002505BA /* snake.jpeg in Resources */,
+				11C17AB8299267D2002505BA /* monkey.jpeg in Resources */,
 				114B3953299256E300F2DBFD /* img4.jpg in Resources */,
 				114B3955299256E700F2DBFD /* img5.jpg in Resources */,
+				11C17AB6299267CF002505BA /* sloth.jpeg in Resources */,
 				11E18948298D388B00F0A933 /* LaunchScreen.storyboard in Resources */,
 				114B3951299256DE00F2DBFD /* img3.jpg in Resources */,
 				114B394F299256D800F2DBFD /* img2.jpg in Resources */,
 				11E18945298D388B00F0A933 /* Assets.xcassets in Resources */,
+				11C17ABA299267D6002505BA /* lion.jpeg in Resources */,
 				11E18943298D388A00F0A933 /* Main.storyboard in Resources */,
 				11E1895B298D3E0300F0A933 /* img1.jpeg in Resources */,
 			);

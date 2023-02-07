@@ -104,21 +104,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonAnswerPressed:" destination="X9p-Or-Umu" eventType="touchUpInside" id="vNI-jC-fj8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlC-ai-ZOm">
                                         <rect key="frame" x="0.0" y="53.5" width="343" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonAnswerPressed:" destination="X9p-Or-Umu" eventType="touchUpInside" id="jVm-ly-QR5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prA-SJ-iA6">
                                         <rect key="frame" x="0.0" y="107" width="343" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonAnswerPressed:" destination="X9p-Or-Umu" eventType="touchUpInside" id="YOz-Jg-Vgc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7u-y1-0SY">
                                         <rect key="frame" x="0.0" y="160.5" width="343" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonAnswerPressed:" destination="X9p-Or-Umu" eventType="touchUpInside" id="ekd-qv-p7b"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -199,6 +211,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="answerButtonOfMultipleQuestionPressed" destination="X9p-Or-Umu" eventType="touchUpInside" id="6rt-ge-chQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -239,7 +254,8 @@
                                             </attributedString>
                                         </state>
                                         <connections>
-                                            <segue destination="MKj-LQ-KVk" kind="show" id="fwt-iN-4kv"/>
+                                            <action selector="answerButtonOfRangeQuestionPressed" destination="X9p-Or-Umu" eventType="touchUpInside" id="5wb-kA-wtP"/>
+                                            <segue destination="MKj-LQ-KVk" kind="show" identifier="showResults" id="VMm-YB-IFV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -292,34 +308,80 @@
                         <outletCollection property="multipleLabels" destination="LCg-4D-lFK" collectionClass="NSMutableArray" id="Fef-kw-YSP"/>
                         <outletCollection property="rangeLabels" destination="Q0E-AN-DLb" collectionClass="NSMutableArray" id="qWH-1z-WNt"/>
                         <outletCollection property="rangeLabels" destination="dHa-gY-pB5" collectionClass="NSMutableArray" id="1K4-0p-wJW"/>
+                        <outletCollection property="multipleSwitches" destination="1Me-sO-vuV" collectionClass="NSMutableArray" id="QpH-eG-pES"/>
+                        <outletCollection property="multipleSwitches" destination="Ht4-Rr-xDb" collectionClass="NSMutableArray" id="lf3-PV-I3G"/>
+                        <outletCollection property="multipleSwitches" destination="lFU-j2-2TE" collectionClass="NSMutableArray" id="nvu-mN-mpT"/>
+                        <outletCollection property="multipleSwitches" destination="CaA-dE-7Bp" collectionClass="NSMutableArray" id="bdF-CR-kbP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHz-Uv-Yea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1412" y="2.2488755622188905"/>
         </scene>
-        <!--Results View Controller-->
+        <!--Результаты-->
         <scene sceneID="HiW-qb-wlj">
             <objects>
                 <viewController id="MKj-LQ-KVk" customClass="ResultsViewController" customModule="TestAnimalPastLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PC9-r8-lFR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Ua-0w-iTm">
+                                <rect key="frame" x="16" y="238.5" width="343" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="3tZ-UF-RSE"/>
+                                    <constraint firstAttribute="width" constant="343" id="i7r-YK-B8R"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J67-4C-r52">
+                                <rect key="frame" x="16" y="444.5" width="343" height="162.5"/>
+                                <string key="text">Змея с малых лет обладает мудростью, прекрасной интуицией, высоким уровнем самосознания и самоуважения. Предпочитает обдуманные решения, во всем полагается только на личный опыт и ощущения. В жизни Змея склонна к эпикурейству, она настоящий знаток в области наслаждений и удовольствий.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1B2-Hg-4X7">
+                                <rect key="frame" x="104" y="149.5" width="167" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ты 🐷!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OB2-6q-VLB">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="73"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="61"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="HOQ-6v-gB6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1B2-Hg-4X7" firstAttribute="centerX" secondItem="PC9-r8-lFR" secondAttribute="centerX" id="1Qe-aK-RoP"/>
+                            <constraint firstItem="HOQ-6v-gB6" firstAttribute="trailing" secondItem="3Ua-0w-iTm" secondAttribute="trailing" constant="16" id="360-aG-F70"/>
+                            <constraint firstItem="J67-4C-r52" firstAttribute="top" secondItem="3Ua-0w-iTm" secondAttribute="bottom" constant="16" id="4cC-B6-ksz"/>
+                            <constraint firstItem="3Ua-0w-iTm" firstAttribute="top" secondItem="1B2-Hg-4X7" secondAttribute="bottom" constant="16" id="HiE-ir-CX0"/>
+                            <constraint firstAttribute="trailing" secondItem="J67-4C-r52" secondAttribute="trailing" constant="16" id="MjZ-AQ-tQX"/>
+                            <constraint firstItem="3Ua-0w-iTm" firstAttribute="leading" secondItem="HOQ-6v-gB6" secondAttribute="leading" constant="16" id="Suf-hJ-fWY"/>
+                            <constraint firstItem="3Ua-0w-iTm" firstAttribute="centerY" secondItem="PC9-r8-lFR" secondAttribute="centerY" id="i5H-nE-xq7"/>
+                            <constraint firstItem="J67-4C-r52" firstAttribute="leading" secondItem="HOQ-6v-gB6" secondAttribute="leading" constant="16" id="jR2-qX-mhV"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0IV-bd-Q3W">
+                    <navigationItem key="navigationItem" title="Результаты" id="0IV-bd-Q3W">
                         <barButtonItem key="rightBarButtonItem" title="Пройти еще раз" id="ahk-io-EXW">
                             <connections>
                                 <segue destination="4AD-lZ-9rf" kind="unwind" unwindAction="unwindFor:" id="2ES-PC-b8q"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="J67-4C-r52" id="sII-g3-s6C"/>
+                        <outlet property="imageAnimal" destination="3Ua-0w-iTm" id="9xw-P2-jdT"/>
+                        <outlet property="typeLabel" destination="OB2-6q-VLB" id="Xni-vx-au8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vue-VC-3zv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="4AD-lZ-9rf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2135" y="2"/>
+            <point key="canvasLocation" x="2133.5999999999999" y="1.3493253373313345"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="56s-Mb-SUi">
