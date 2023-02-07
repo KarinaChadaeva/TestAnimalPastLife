@@ -91,7 +91,7 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WN9-dr-2la">
                                 <rect key="frame" x="0.0" y="96" width="375" height="4"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст вопроса" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiM-Wt-D6p">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст вопроса" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiM-Wt-D6p">
                                 <rect key="frame" x="16" y="116" width="343" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -129,7 +129,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MBg-DX-rVK">
-                                <rect key="frame" x="16" y="442" width="343" height="192.5"/>
+                                <rect key="frame" x="16" y="442" width="343" height="194.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="DPe-RA-i3v">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="31"/>
@@ -188,7 +188,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zq-eV-nX9">
-                                        <rect key="frame" x="0.0" y="156" width="343" height="36.5"/>
+                                        <rect key="frame" x="0.0" y="156" width="343" height="38.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -203,7 +203,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c7F-MH-QOb">
-                                <rect key="frame" x="16" y="443" width="343" height="112"/>
+                                <rect key="frame" x="16" y="441" width="343" height="114"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="69f-oh-OVL">
                                         <rect key="frame" x="-2" y="0.0" width="347" height="31"/>
@@ -226,7 +226,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jxY-P2-XkP">
-                                        <rect key="frame" x="0.0" y="70" width="343" height="42"/>
+                                        <rect key="frame" x="0.0" y="70" width="343" height="44"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -251,20 +251,20 @@
                         <viewLayoutGuide key="safeArea" id="DY9-Zq-beT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Lzz-GZ-OQl" firstAttribute="leading" secondItem="DY9-Zq-beT" secondAttribute="leading" constant="16" id="1HT-yC-eOD"/>
                             <constraint firstItem="MBg-DX-rVK" firstAttribute="top" secondItem="IGf-8G-4Cu" secondAttribute="bottom" constant="58" id="38q-6R-BfN"/>
-                            <constraint firstItem="DY9-Zq-beT" firstAttribute="trailing" secondItem="Lzz-GZ-OQl" secondAttribute="trailing" constant="16" id="5MI-Vx-W6E"/>
                             <constraint firstItem="aiM-Wt-D6p" firstAttribute="leading" secondItem="DY9-Zq-beT" secondAttribute="leading" constant="16" id="Ahi-gh-eXf"/>
                             <constraint firstItem="DY9-Zq-beT" firstAttribute="trailing" secondItem="c7F-MH-QOb" secondAttribute="trailing" constant="16" id="Egl-Ov-kIq"/>
-                            <constraint firstItem="DY9-Zq-beT" firstAttribute="bottom" secondItem="Lzz-GZ-OQl" secondAttribute="bottom" constant="64" id="FRZ-bi-zhk"/>
+                            <constraint firstItem="DY9-Zq-beT" firstAttribute="bottom" secondItem="Lzz-GZ-OQl" secondAttribute="bottom" constant="64" id="Hl3-6i-qd5"/>
                             <constraint firstItem="DY9-Zq-beT" firstAttribute="trailing" secondItem="WN9-dr-2la" secondAttribute="trailing" id="ItN-Ng-0Vl"/>
                             <constraint firstItem="WN9-dr-2la" firstAttribute="top" secondItem="DY9-Zq-beT" secondAttribute="top" id="JfN-Ti-6df"/>
+                            <constraint firstItem="Lzz-GZ-OQl" firstAttribute="leading" secondItem="DY9-Zq-beT" secondAttribute="leading" constant="16" id="Kvq-Ou-3ua"/>
                             <constraint firstItem="IGf-8G-4Cu" firstAttribute="leading" secondItem="DY9-Zq-beT" secondAttribute="leading" constant="16" id="MMS-3O-YNc"/>
                             <constraint firstItem="WN9-dr-2la" firstAttribute="leading" secondItem="DY9-Zq-beT" secondAttribute="leading" id="NPM-J0-IaX"/>
+                            <constraint firstItem="DY9-Zq-beT" firstAttribute="trailing" secondItem="Lzz-GZ-OQl" secondAttribute="trailing" constant="16" id="TBd-TZ-0gT"/>
                             <constraint firstItem="IGf-8G-4Cu" firstAttribute="top" secondItem="aiM-Wt-D6p" secondAttribute="bottom" constant="61" id="VZh-Pu-M26"/>
+                            <constraint firstItem="Lzz-GZ-OQl" firstAttribute="centerX" secondItem="0di-s5-Ete" secondAttribute="centerX" id="X2H-gU-ixW"/>
                             <constraint firstItem="DY9-Zq-beT" firstAttribute="trailing" secondItem="MBg-DX-rVK" secondAttribute="trailing" constant="16" id="aEn-Mp-rNw"/>
                             <constraint firstItem="c7F-MH-QOb" firstAttribute="leading" secondItem="DY9-Zq-beT" secondAttribute="leading" constant="16" id="dU5-Mk-dmM"/>
-                            <constraint firstItem="Lzz-GZ-OQl" firstAttribute="top" secondItem="IGf-8G-4Cu" secondAttribute="bottom" constant="24" id="eyQ-PW-yP8"/>
                             <constraint firstItem="MBg-DX-rVK" firstAttribute="centerX" secondItem="0di-s5-Ete" secondAttribute="centerX" id="fkD-6V-1s2"/>
                             <constraint firstItem="DY9-Zq-beT" firstAttribute="trailing" secondItem="IGf-8G-4Cu" secondAttribute="trailing" constant="16" id="h8t-zl-c9G"/>
                             <constraint firstItem="aiM-Wt-D6p" firstAttribute="top" secondItem="WN9-dr-2la" secondAttribute="bottom" constant="16" id="jur-x6-AUM"/>
@@ -274,6 +274,25 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="G9G-Wu-c5r"/>
+                    <connections>
+                        <outlet property="imageView" destination="IGf-8G-4Cu" id="KPu-oV-mfD"/>
+                        <outlet property="multipleStackView" destination="MBg-DX-rVK" id="dhS-Th-7Zu"/>
+                        <outlet property="progressView" destination="WN9-dr-2la" id="eQQ-PX-lXu"/>
+                        <outlet property="questionTextLabel" destination="aiM-Wt-D6p" id="L2w-Vo-arD"/>
+                        <outlet property="rangeSlider" destination="69f-oh-OVL" id="p4l-Tp-CY7"/>
+                        <outlet property="rangeStackView" destination="c7F-MH-QOb" id="VHJ-T2-v4b"/>
+                        <outlet property="singleStackView" destination="Lzz-GZ-OQl" id="VFJ-Fi-vI5"/>
+                        <outletCollection property="singleButtons" destination="V41-aV-9b4" collectionClass="NSMutableArray" id="p3g-G4-ABF"/>
+                        <outletCollection property="singleButtons" destination="tlC-ai-ZOm" collectionClass="NSMutableArray" id="glj-qY-Fj1"/>
+                        <outletCollection property="singleButtons" destination="prA-SJ-iA6" collectionClass="NSMutableArray" id="xbA-l4-6F0"/>
+                        <outletCollection property="singleButtons" destination="Q7u-y1-0SY" collectionClass="NSMutableArray" id="qaJ-sn-Mnq"/>
+                        <outletCollection property="multipleLabels" destination="T04-BW-eSg" collectionClass="NSMutableArray" id="BK2-Yr-ZW0"/>
+                        <outletCollection property="multipleLabels" destination="84R-Pi-NHo" collectionClass="NSMutableArray" id="geD-5O-fyy"/>
+                        <outletCollection property="multipleLabels" destination="d8o-4m-z4S" collectionClass="NSMutableArray" id="lv0-c1-PWJ"/>
+                        <outletCollection property="multipleLabels" destination="LCg-4D-lFK" collectionClass="NSMutableArray" id="Fef-kw-YSP"/>
+                        <outletCollection property="rangeLabels" destination="Q0E-AN-DLb" collectionClass="NSMutableArray" id="qWH-1z-WNt"/>
+                        <outletCollection property="rangeLabels" destination="dHa-gY-pB5" collectionClass="NSMutableArray" id="1K4-0p-wJW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHz-Uv-Yea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         }
         
         if userName.count == 0 {
-            showAlert(title: "Упс! 😿", message: "Введи имя, чтобы иметь возможность пройти тест")
+            showAlert(title: "Упс! 😿", message: "Чтобы пройти тест, нужно ввести свое имя")
         }
         performSegue(withIdentifier: "showQuestions", sender: nil)
     }
