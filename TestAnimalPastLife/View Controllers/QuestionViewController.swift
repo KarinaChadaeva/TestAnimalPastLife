@@ -12,8 +12,8 @@ class QuestionViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var rangeSlider: UISlider! {
         didSet {
-            let answerCount = Float(currentAnswers.count - 1)
-            rangeSlider.value = answerCount
+            let answersCount = Float(questions[questionIndex].answers.count - 1)
+            rangeSlider.maximumValue = answersCount
         }
     }
     @IBOutlet var progressView: UIProgressView!
@@ -67,11 +67,12 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func answerButtonOfRangeQuestionPressed() {
-        let index = Int(rangeSlider.value)
+        let index = lrintf(rangeSlider.value)
         answersChosen.append(currentAnswers[index])
         
         nextQuestion()
     }
+    
     
     //MARK: - Navigation
 
